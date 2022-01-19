@@ -1,0 +1,2 @@
+# notes
+devlop nodes
