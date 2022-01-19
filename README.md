@@ -18,9 +18,9 @@ devlop nodes
 预发环境通过后，发布到 `master` 分支上并打上标签 `tag`  
 如果线上分支出现 bug，这时开发者应该基于预发布（没有预发布环境就用 `master` 分支），新建一个 bug 分支用来临时解决 bug，处理完成后申请合并到预发布分支（好处是不会影响正在开发中的功能）
 ### 1.1 克隆指定分支
-场景：要求使用非master分支（如next分支）进行开发
+场景：要求使用非`master`分支（如next分支）进行开发
 
-git clone -b next “git地址”
+`git clone -b next “git地址”`
 1.2 优雅的在分支上开发
 1、克隆到本地的分支为 next 分支，但是不能直接在上面开发，而是需要另外创建分支：
 ```
@@ -44,7 +44,7 @@ git merge next-dev
 # 将本地代码推送到远程
 git push origin next:next	# ”:“前面的是本地分支的名字，”:"后面的是远程分支的名字
 ```
-注意：合并之前先 commit，合并之前先 git pull
+注意：合并之前先 `commit`，合并之前先 `git pull`
 
 ## 2. 常用命令
 ```
@@ -80,17 +80,17 @@ $ git fetch
 # 或拉取指定的远程主机上的分支，如 origin 上的 master
 $ git fetch origin master
 ```
-git fetch 与 git pull 的区别
+`git fetch` 与 `git pull` 的区别
 
-git fetch：
-远端跟踪分支：可以更改远端跟踪分支
-拉取：会将数据拉取到本地仓库，但是不会自动合并或修改当前的工作
-commitID：本地库中 master 的 commitID 不变，还是等于 1
-git pull：
-远端跟踪分支：无法对远端跟踪分支操作，必须先切回到本地分支然后创建一个新的 commit 提交
-拉取：从远处获取最新版本，并合并到本地，会自动合并或修改当前的工作
-commitID：本地库中 master 的 commitID 发生改变，变成了 2
-用法
+`git fetch`：  
+远端跟踪分支：可以更改远端跟踪分支  
+拉取：会将数据拉取到本地仓库，但是不会自动合并或修改当前的工作  
+commitID：本地库中 master 的 commitID 不变，还是等于 1  
+`git pull`：  
+远端跟踪分支：无法对远端跟踪分支操作，必须先切回到本地分支然后创建一个新的 commit 提交  
+拉取：从远处获取最新版本，并合并到本地，会自动合并或修改当前的工作  
+commitID：本地库中 master 的 commitID 发生改变，变成了 2  
+用法  
 
 1、`git pull`
 ```
