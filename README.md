@@ -116,7 +116,7 @@ git diff		# 比较 master 分支和 temp 分支的不同
 git merge temp	# 合并 temp 分支到 master 分支
 git branch -d temp	# 删除 temp 分支
 ```
-注意：git fetch 更安全也更符合实际要求，可以在合并前，先查看更新情况，根据实际情况再决定是否合并
+注意：`git fetch` 更安全也更符合实际要求，可以在合并前，先查看更新情况，根据实际情况再决定是否合并
 
 ## 4. git push 常用用法
 一般形式：
@@ -139,7 +139,7 @@ git push origin ：refs/for/master
 ```
 git push origin
 ```
-如果当前分支只有一个远程分支，那么主机名都可以省略，形如 git push，可以使用 git branch -r ，查看远程的分支名：
+如果当前分支只有一个远程分支，那么主机名都可以省略，形如 `git push`，可以使用 `git branch -r` ，查看远程的分支名：
 ```
 git push
 ```
@@ -162,10 +162,10 @@ git branch		# 查看当前分支
 ### 6.1 commit 规范
 commit 的内容也应该遵守规范，一般来说是
 
-1. fix:xx ：表示修改了XX代码
-2. feat:xx ：新增了XX需求
-3. style:xx ：修改了部分的样式
-4. delete:xx： 删除了某些无用的部分
+1. `fix:xx` ：表示修改了XX代码  
+2. `feat:xx` ：新增了XX需求  
+3. `style:xx` ：修改了部分的样式  
+4. `delete:xx`： 删除了某些无用的部分  
 推送到远程
 ```
 git push -u origin master	# 推送到远端 master 
