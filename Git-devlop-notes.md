@@ -80,13 +80,14 @@ $ git fetch origin master
 `git fetch` 与 `git pull` 的区别
 
 `git fetch`：  
-远端跟踪分支：可以更改远端跟踪分支  
-拉取：会将数据拉取到本地仓库，但是不会自动合并或修改当前的工作  
-commitID：本地库中 master 的 commitID 不变，还是等于 1  
+* 远端跟踪分支：可以更改远端跟踪分支  
+* 拉取：会将数据拉取到本地仓库，但是不会自动合并或修改当前的工作  
+* commitID：本地库中 master 的 commitID 不变，还是等于 1
+
 `git pull`：  
-远端跟踪分支：无法对远端跟踪分支操作，必须先切回到本地分支然后创建一个新的 commit 提交  
-拉取：从远处获取最新版本，并合并到本地，会自动合并或修改当前的工作  
-commitID：本地库中 master 的 commitID 发生改变，变成了 2  
+* 远端跟踪分支：无法对远端跟踪分支操作，必须先切回到本地分支然后创建一个新的 commit 提交  
+* 拉取：从远处获取最新版本，并合并到本地，会自动合并或修改当前的工作  
+* commitID：本地库中 master 的 commitID 发生改变，变成了 2  
 用法  
 
 1、`git pull`
