@@ -1,6 +1,3 @@
-# notes
-devlop nodes
-
 # Git 开发流程
 ## 1. 流程
 
