@@ -47,7 +47,7 @@ git push origin next:next	# ”:“前面的是本地分支的名字，”:"后�
 ```
 # ssh 方式需要配置 SSH Key，https 需要每次都输入用户名和密码
 $ cd /d/python-code/
-$ git clone git@github.com:wangy8961/flask-vuejs-madblog.git
+$ git clone git@github.com:xxx/xxx.git
     
 git init	# 初始化本地仓库
 git status	# 查看状态
