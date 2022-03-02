@@ -1,9 +1,4 @@
 
-     
-
-### 其他参考
-
-https://git.corp.qianka.com/qianka/doc/wikis/gitlab-merge-request-workflow
 
 ### 第一步 创建项目分支
 
@@ -11,10 +6,10 @@ https://git.corp.qianka.com/qianka/doc/wikis/gitlab-merge-request-workflow
 
 
 ```shell
-fork项目(以zhuanqian/zq_admin为例)
-搜索zq_admin,找到zhuanqian/zq_admin，点击进入
+fork项目(以xx/xx_admin为例)
+搜索zq_admin,找到xx/xx_admin，点击进入
 配置ssh，请自行百度完成
-点击fork，把zq_admin fork到自己的仓库
+点击fork，把xx_admin fork到自己的仓库
 进入自己的仓库，复制仓库地址，git clone ‘你的仓库地址’，这样就把你的仓库拉取到了本地
 环境的配置和搭建，可以参考README进行
 
