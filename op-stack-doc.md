@@ -393,4 +393,33 @@ cat deployments/getting-started/L1StandardBridgeProxy.json | jq -r .address
 
 
 ### 4.Op代码说明
-内容章节三的内容在这里。
+
+#### 目录结构
+```
+├── docs：包括审计和事后分析的文件集合
+├── op-bindings：Bedrock 智能合约的 Go 绑定。
+├── op-batcher : L2-Batch Submitter，将批次捆绑提交到 L1
+├── op-bootnode : 独立操作节点发现bootnode
+├── op-chain-ops : 国家手术实用程序
+├── op-challenger : 争议游戏挑战代理
+├── op-e2e：Go 中所有基岩组件的端到端测试
+├── op-exporter : Prometheus 导出器客户端
+├── op-heartbeat : 心跳监控服务
+├── op-node : rollup共识层客户端
+├── op-preimage : Go 绑定原像 Oracle
+├── op-program : 防错程序
+├── op-proposer : L2-Output Submitter，向L1提交提案
+├── op-service : 通用代码库实用程序
+├── op-signer : 客户端签名者
+├── op-wheel : 数据库实用程序
+├── ops-bedrock : Bedrock 开发网络工作
+├── packages 
+│ ├── chain-mon : 链监控服务
+│ ├── common-ts : 在 TypeScript 中构建应用程序的常用工具
+│ ├── Contract-ts : ABI 和地址常量
+│ ├── Contracts-bedrock : Bedrock 智能合约
+│ ├── core-utils : 使构建 Optimism 更容易的低级实用程序
+│ └── sdk : 提供了一套与 Optimism 交互的工具
+├── proxyd : 可配置的RPC请求路由器和代理
+└── specs: 从基岩升级开始的汇总规格
+```
